@@ -3,12 +3,12 @@ import streamlit as st #Create Apps of Python Programs + Hosting
 import math
 
 nav = st.sidebar.radio("Navigation",["Basic Stats","Organizing Data","Averages & Variation", "Probability Theory", "Binomial Distribution"], index=3)
-st.image('images\stats_banner.PNG', width=400)
+st.image('images//stats_banner.PNG', width=400)
 
 if nav == "Probability Theory":
     st.header("Probability Theory")
     
-    st.image('images\SampleSpace_Deck.PNG', width=400)
+    st.image('images//SampleSpace_Deck.PNG', width=400)
     st.subheader("Sample Space")
     import itertools, random
 
@@ -30,7 +30,7 @@ if nav == "Probability Theory":
     
     st.write("probability of picking {} from a deck".format(card), str(round((picked/len(deck))*100, 2))+'%')
     
-    st.image('images\pocket-aces.jpg', width=400)
+    st.image('images//pocket-aces.jpg', width=400)
     st.subheader('Permutations & Combinations')
     
     st.write("Pocket Cards: First 2 Cards dealt to each player in Poker")
